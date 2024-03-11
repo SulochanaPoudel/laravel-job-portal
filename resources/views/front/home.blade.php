@@ -1,13 +1,13 @@
 @extends('front.layouts.app')
 
 @section('main')
-<section class="section-0 lazy d-flex bg-image-style dark align-items-center "  class="" data-bg="{{ asset('assets/images/banner5.jpg') }}">
+<section class="section-0 lazy d-flex bg-image-style dark align-items-center "  class="" data-bg="{{ asset('assets/images/banner6.jpg') }}">
     <div class="container">
         <div class="row">
             <div class="col-12 col-xl-8">
-                <h1>Find your dream job</h1>
-                <p>Thounsands of jobs available.</p>
-                <div class="banner-btn mt-5"><a href="#" class="btn btn-primary mb-4 mb-sm-0">Explore Now</a></div>
+                <!-- <h1>Your Dreams, Your Career</h1>
+                <h3 class="text-light"> Explore, Achieve, Thrive</h3> -->
+                <!-- <div class="banner-btn mt-5"><a href="#" class="btn btn-primary mb-4 mb-sm-0">Explore Now</a></div> -->
             </div>
         </div>
     </div>
@@ -16,7 +16,7 @@
 <section class="section-1 py-5 "> 
     <div class="container">
         <div class="card border-0 shadow p-5">
-            <form action="{{ route("jobs") }}" method="GET">
+            <form action="{{ route('jobs') }}" method="GET">
                 <div class="row">
                     <div class="col-md-3 mb-3 mb-sm-3 mb-lg-0">
                         <input type="text" class="form-control" name="keyword" id="keyword" placeholder="Keywords">
@@ -67,7 +67,36 @@
     </div>
 </section>
 
-<section class="section-3  py-5">
+<section class="our-story bg-1">
+    <div class="container" data-aos="fade-up">
+        <div class="row align-items-center">
+            <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12 col-12">
+                <div class="our-story-img py-2">
+                    <img src="{{ asset('assets/images/banner5.jpg')}}" alt="" class="px-5 py-2 rounded-end">
+                </div>
+            </div>
+            <div class="col-xl-7 col-lg-6 col-md-12 col-sm-12 col-12">
+                <div class="about-info">
+                    <div class="heading-wrapper mt-0 py-5">
+                        <h4>
+                            Our Story
+                        </h4>
+                        <h2>
+
+                            NW Employment Now: Where Careers Connect!
+                        </h2>
+                    </div>
+                    <p class="mb-3 py-2 text-justify">
+                        NW Employment Now is more than just a platform; it's your partner in progress. Through personalized recommendations, innovative tools, and community events, we're here to support your journey every step of the way. Our success is intertwined with yours, and that's what makes NW Employment Now more than a job portal – it's a shared adventure.
+                        Join us on this exciting journey where careers flourish, connections blossom, and dreams become reality. NW Employment Now is not just a platform; it's a thriving community waiting to welcome you. Your next opportunity is just a click away!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-3 bg-2  py-5">
     <div class="container">
         <h2>Featured Jobs</h2>
         <div class="row pt-5">
@@ -115,7 +144,7 @@
     </div>
 </section>
 
-<section class="section-3 bg-2 py-5">
+<section class="section-3 bg-1 py-5">
     <div class="container">
         <h2>Latest Jobs</h2>
         <div class="row pt-5">
